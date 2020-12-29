@@ -16,7 +16,7 @@ class memoController extends Controller
       return $this->middleware('auth');
     }
     public function index(){
-      $topMemos = Memo::orderBy('id' , 'desc');
+      $topMemos = Memo::orderBy('created_at','asc')->get();//all();
       return view('memo.index', ['topMemos' => $topMemos ]);
     }
     public function register(){

@@ -4,15 +4,16 @@
 <h2 class="mb-4 text-center">{{ __('メモリスト') }}</h2>
 <div class="scrollx">
 
-@foreach( $topMemos as $topMemos )
+@foreach( $topMemos as $topMemo )
 <div class="mb-3 bg-white p-2 list_b">
-<a href="{{ route('list' , $topMemos->id ) }}">
-@if(isset($topMemos->title) )
-<span class="d-block mb-2">{{ $topMemos->title }}</span>
+<a href="{{ route('list' , $topMemo->id ) }}">
+@if(isset($topMemo->title) )
+<span class="d-block mb-2">{{ $topMemo->title }}</span>
+<span class="d-block ml-auto">{{ $topMemo->created_at->format('Y/m/d') }}</span>
 @else
 <span class="d-block mb-2">{{ __('No title') }}</span>
+<span class="d-block ml-auto">{{ $topMemo->created_at->format('Y/m/d') }}</span>
 @endif
-<span class="d-block ml-auto">{{ $topMemos->created_at->format('Y/m/d H:i:s') }}</span>
 </a>
 </div>
 @endforeach
