@@ -10919,6 +10919,10 @@ h1 a:hover {
   background: none !important;
 }
 
+.list_title {
+  word-break: break-all;
+}
+
 @media screen and (min-width: 960px) {
   .col4 {
     border-right: 1px solid #5d56563d;

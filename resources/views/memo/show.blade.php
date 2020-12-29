@@ -3,7 +3,7 @@
 @section('list')
 <div>
 @if(isset( $lists->title ))
-<h3 class="d-block mb-2">{{ $lists->title }}</h3>
+<h3 class="d-block mb-2 list_title">{{ $lists->title }}</h3>
 @else
 <span class="d-block mb-2">{{ __('No title') }}</span>
 @endif

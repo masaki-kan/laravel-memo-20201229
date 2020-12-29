@@ -8,7 +8,7 @@
 <div class="mb-3 bg-white p-2 list_b">
 <a href="{{ route('list' , $topMemo->id ) }}">
 @if(isset($topMemo->title) )
-<span class="d-block mb-2">{{ $topMemo->title }}</span>
+<span class="d-block mb-2 list_title">{{ $topMemo->title }}</span>
 <span class="d-block ml-auto">{{ $topMemo->created_at->format('Y/m/d') }}</span>
 @else
 <span class="d-block mb-2">{{ __('No title') }}</span>
