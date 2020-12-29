@@ -3,7 +3,7 @@
 @section('list')
 <h2 class="mb-4 text-center">{{ __('メモリスト') }}</h2>
 <div class="scrollx">
-@if( count($topMemos) > 0 )
+
 @foreach( $topMemos as $topMemos )
 <div class="mb-3 bg-white p-2 list_b">
 <a href="{{ route('list' , $topMemos->id ) }}">
@@ -16,9 +16,7 @@
 </a>
 </div>
 @endforeach
-@else
-<p>データがありません。</p>
-@endif
+
 </div>
 @endsection
 

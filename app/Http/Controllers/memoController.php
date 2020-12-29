@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Memo;
 use Auth;
 use App\Replaced\replacedText;
+use Illuminate\Support\Facades\DB;
+
 
 class memoController extends Controller
 {
@@ -14,7 +16,7 @@ class memoController extends Controller
       return $this->middleware('auth');
     }
     public function index(){
-      $topMemos = Memo::all();
+      $topMemos = Memo::orderBy('id' , 'desc');
       return view('memo.index', ['topMemos' => $topMemos ]);
     }
     public function register(){
