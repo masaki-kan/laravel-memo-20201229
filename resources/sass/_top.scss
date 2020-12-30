@@ -69,13 +69,18 @@ h1{
 .top_flex_l{
   p{
     font-size: 1.5em;
-  }
-  i{
-    font-size: 1.5em;
-    margin-right: 10px;
-    &:active{
-      position: relative;
-      top: 5px;
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i{
+        font-size: 1.5em;
+        margin-right: 10px;
+        &:active{
+          position: relative;
+          top: 5px;
+        }
+      }
     }
   }
 }
@@ -86,15 +91,21 @@ h1{
 .top_flex_r{
   p{
     font-size: 1.5em;
-  }
-  i{
-    font-size: 1.5em;
-    margin-right: 10px;
-    &:active{
-      position: relative;
-      top: 5px;
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i{
+        font-size: 1.5em;
+        margin-right: 10px;
+        &:active{
+          position: relative;
+          top: 5px;
+        }
+      }
     }
   }
+
 }
 .url_text{
   a{

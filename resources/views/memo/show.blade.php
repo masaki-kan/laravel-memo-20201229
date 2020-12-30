@@ -17,7 +17,7 @@
 
 <div class="d-flex d-lg-flex top_flex_r border-bottom mb-4">
 <h2 class="mr-auto text-center">{{ __('新規メモ') }}</h2>
-<p class="mr-2 mr-lg-2 ml-auto"><label for="update"><i class="fas fa-save"></i></label></p>
+<p class="mr-2 mr-lg-2 ml-auto"><label for="update"><a><i class="fas fa-save"></i></a></label></p>
 <p class=""><a href="{{ route('delete', $lists->id ) }}"><i class="fas fa-trash"></i></a></p>
 </div>
 <div class="p-2">

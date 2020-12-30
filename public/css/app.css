@@ -10973,12 +10973,18 @@ h1 a:hover {
     font-size: 1.5em;
   }
 
-  .top_flex_l i {
+  .top_flex_l p a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top_flex_l p a i {
     font-size: 1.5em;
     margin-right: 10px;
   }
 
-  .top_flex_l i:active {
+  .top_flex_l p a i:active {
     position: relative;
     top: 5px;
   }
@@ -10992,12 +10998,18 @@ h1 a:hover {
     font-size: 1.5em;
   }
 
-  .top_flex_r i {
+  .top_flex_r p a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top_flex_r p a i {
     font-size: 1.5em;
     margin-right: 10px;
   }
 
-  .top_flex_r i:active {
+  .top_flex_r p a i:active {
     position: relative;
     top: 5px;
   }
@@ -11027,5 +11039,7 @@ form textarea {
 
 .fa-sign-out-alt {
   color: #000;
+  width: 28.3px;
+  height: 32px;
 }
 
