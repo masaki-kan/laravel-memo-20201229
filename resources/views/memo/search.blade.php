@@ -17,15 +17,15 @@
 
 <div class="scrollx">
 
-@foreach( $topMemos as $topMemo )
+@foreach( $values as $value )
 <div class="mb-3 bg-white p-2 list_b">
-<a href="{{ route('list' , $topMemo->id ) }}">
-@if(isset($topMemo->title) )
-<span class="d-block mb-2 list_title">{{ $topMemo->title }}</span>
-<span class="d-block ml-auto"><i class="far fa-clock"></i> {{ $topMemo->created_at->format('Y/m/d') }}</span>
+<a href="{{ route('list' , $value->id ) }}">
+@if(isset($value->title) )
+<span class="d-block mb-2 list_title">{{ $value->title }}</span>
+<span class="d-block ml-auto"><i class="far fa-clock"></i> {{ $value->created_at->format('Y/m/d') }}</span>
 @else
 <span class="d-block mb-2">{{ __('No title') }}</span>
-<span class="d-block ml-auto"><i class="far fa-clock"></i> {{ $topMemo->created_at->format('Y/m/d') }}</span>
+<span class="d-block ml-auto"><i class="far fa-clock"></i> {{ $value->created_at->format('Y/m/d') }}</span>
 @endif
 </a>
 </div>

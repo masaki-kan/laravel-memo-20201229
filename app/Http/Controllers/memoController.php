@@ -40,6 +40,12 @@ class memoController extends Controller
       $memos->save();
       return redirect()->back();
     }
+    public function search( Request $request){
+      $key = $request->input('input');
+      $values = Memo::where( 'content' , 'LIKE' , '%'.$key.'%')->get();
+      return view( 'memo.search'  , [ 'values' => $values ]);
+    }
+
     public function delete( $id ){
       Memo::where('id' , $id)->delete();
       return redirect(route('top'));

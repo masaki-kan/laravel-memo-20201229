@@ -25,6 +25,8 @@ Route::get('create' , 'memoController@create')->name('create');
 
 Route::post('update' , 'memoController@update')->name('update');
 
+Route::get('search' , 'memoController@search')->name('search');
+
 Route::get('delete/{id}' , 'memoController@delete')->name('delete');
 
 Auth::routes();

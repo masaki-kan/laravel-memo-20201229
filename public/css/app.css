@@ -11022,6 +11022,8 @@ h1 a:hover {
 form input {
   width: 100%;
   border: none;
+  line-height: 44px;
+  height: 44px;
 }
 
 form textarea {
