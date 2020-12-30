@@ -8,7 +8,7 @@
 <span class="d-block mb-2">{{ __('No title') }}</span>
 @endif
 <span class="d-block mb-2 url_text">{!! nl2br($introduction) !!}</span>
-<span class="d-block ml-auto">更新日：{{ $lists->created_at->format('Y/m/d H:i:s') }}</span>
+<span class="d-block ml-auto"><i class="fas fa-history"></i> {{ $lists->created_at->format('Y/m/d H:i:s') }}</span>
 </div>
 
 @endsection

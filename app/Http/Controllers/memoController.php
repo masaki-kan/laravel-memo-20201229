@@ -46,8 +46,10 @@ class memoController extends Controller
     }
     public function list( Request $request , $id){
       $lists = Memo::find($id);
+      //content内にURLがあるとリンク設定する
       $introduction = replacedText::text($lists->content);
 
       return view( 'memo.show' )->with( ['lists' => $lists , 'introduction' => $introduction ] );
+      //with()で引数を複数使う
     }
 }
